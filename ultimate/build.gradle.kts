@@ -37,8 +37,7 @@ dependencies {
     compile(project(":idea:idea-gradle")) { isTransitive = false }
 
     compile(ideaUltimatePreloadedDeps("*.jar", subdir = "nodejs_plugin/NodeJS/lib"))
-    compile(ideaUltimateSdkCoreDeps("annotations", "intellij-core"))
-    compile("org.jetbrains.intellij.deps:trove4j:1.0.20160824")
+    compile(ideaUltimateSdkCoreDeps("annotations", "trove4j", "intellij-core"))
     compile(ideaUltimateSdkDeps("openapi", "idea", "util", "jdom", "platform-api", "platform-impl", "java-api", "java-impl"))
     compile(ideaUltimatePluginDeps("*.jar", plugin = "CSS"))
     compile(ideaUltimatePluginDeps("*.jar", plugin = "DatabaseTools"))

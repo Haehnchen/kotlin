@@ -12,8 +12,7 @@ dependencies {
     testCompile(projectDist(":kotlin-test:kotlin-test-jvm"))
     testCompile(projectDist(":kotlin-test:kotlin-test-junit"))
     testCompile(commonDep("junit:junit"))
-    testRuntime(ideaSdkCoreDeps("intellij-core"))
-    compile("org.jetbrains.intellij.deps:trove4j:1.0.20160824")
+    testRuntime(ideaSdkCoreDeps("trove4j", "intellij-core"))
 }
 
 sourceSets {
